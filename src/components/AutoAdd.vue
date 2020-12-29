@@ -3,6 +3,7 @@
 <h3>
   {{$store.state.count}} --{{$store.getters.optCount}}
 </h3>
+
   </div>
 </template>
 <script>

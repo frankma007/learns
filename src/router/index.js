@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Map from '@/components/Map'
 import Learns from '@/components/Learns'
 import AutoAddSubtract from "@/components/AutoAddSubtract";
+import Login from "@/components/Login";
+
 
 Vue.use(Router)
 
@@ -28,6 +30,12 @@ export default new Router({
       path: '/autoadd',
       name: 'LeaAutoAddSubtractrns',
       component: AutoAddSubtract
+      
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
       
     }
   ]

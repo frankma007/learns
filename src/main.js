@@ -4,6 +4,8 @@ import Vue from 'vue'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css'
 // import './themes/vars.scss'
 import VueAMap from 'vue-amap';
 
@@ -11,6 +13,15 @@ import store from "./store/store.js";
 
 import App from './App'
 Vue.use(ElementUI);
+Vue.use(Antd);
+import common from './common/common.js'
+Vue.use(common);
+import globalVariable from './common/globalVariable'
+Vue.prototype.globalVariable =globalVariable
+import globalObjs from './common/globalObjs'
+Vue.prototype.globalObjs=globalObjs
+
+
 
 
 
